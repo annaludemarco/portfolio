@@ -1,0 +1,387 @@
+# Renewable Energy Capital Budgeting: 50 MW Solar Plant Investment Analysis
+
+**Project Type:** Capital Budgeting & Investment Valuation  
+**Industry:** Renewable Energy (Solar Power)  
+**Course:** Executive Master in Finance and Financial Markets - Rome Business School  
+**Role:** Team Leader (6-person team)  
+**Tools:** Excel Financial Modeling, DCF Analysis, NPV/IRR, Sensitivity Analysis  
+**Date:** April 2025
+
+---
+
+## Executive Summary
+
+Led the financial feasibility analysis for **GreenVolt Energy Ltd**, evaluating a €65M investment in a 50 MW solar power plant in Southern Spain. Built a 20-year cash flow model incorporating solar degradation, tax shields, WACC-based discounting, and dividend policy impacts. 
+
+**Investment Decision:** **APPROVED** - Project generates positive NPV of €7.6M (12.7% IRR) but requires careful attention to financing structure, as shareholder returns are highly sensitive to dividend policy and electricity price fluctuations.
+
+**Critical Finding:** While project economics are sound (IRR > WACC), aggressive dividend policies destroy shareholder value—at 10% dividend payout, shareholder NPV becomes **-€49.3M** with negative IRR (-12.2%).
+
+---
+
+## Project Context
+
+### Business Case
+**GreenVolt Energy Ltd** evaluating construction of 50 MW solar photovoltaic plant in Southern Spain:
+- **Initial Investment:** €60M (Year 0 - EPC costs)
+- **Additional CapEx:** €5M (Year 3 - grid upgrade + inverter replacement)
+- **Revenue Model:** 20-year Power Purchase Agreement (PPA) at €85/MWh
+- **Project Life:** 20 years
+- **Expected Output:** 120,000 MWh in Year 1
+
+### Strategic Question
+Is this project financially viable considering:
+1. Solar panel degradation (0.5% annually)
+2. Long-term debt obligations
+3. Shareholder return expectations (dividend policy)
+4. Market risks (electricity price volatility, WACC changes)
+
+---
+
+## Methodology
+
+### 1. Financial Model Architecture
+
+Built comprehensive 20-year cash flow model with three perspectives:
+
+**A. Project-Level Analysis (Unlevered)**
+- Evaluated project economics independent of financing structure
+- Focus: Does the project create value as a standalone business?
+
+**B. Shareholder-Level Analysis (Levered)**
+- Incorporated dividend payments and financing costs
+- Focus: What returns do equity investors actually receive?
+
+**C. Integrated P&L and Cash Flow**
+- Full income statement cascade: Revenue → EBITDA → EBIT → Net Income
+- Cash flow decomposition: CFO (operations) + CFI (investments) + CFF (financing)
+
+### 2. Key Model Components
+
+**Revenue Modeling:**
+```
+Year 1 Revenue = 120,000 MWh × €85/MWh = €10.2M
+Year N Revenue = Year (N-1) Output × (1 - 0.5%) × €85/MWh
+```
+- Incorporated 0.5% annual degradation in solar panel efficiency
+- Fixed PPA price (€85/MWh) for 20-year contract
+
+**Cost Structure:**
+- **OPEX:** €1.5M annually (2% of initial investment) - O&M, insurance, land lease
+- **Depreciation:** 
+  - Initial CapEx: €3M/year (€60M / 20 years straight-line)
+  - Additional CapEx: €294K/year (€5M / 17 remaining years from Year 3)
+- **Tax Rate:** 25% corporate tax
+
+**Financing Assumptions:**
+- **WACC:** 8% (weighted average cost of capital)
+- **Dividend Policy:** 5% of total invested capital paid annually from Year 2 onwards
+- **Total Capital:** €65M (€60M + €5M)
+
+### 3. Valuation Metrics Calculated
+
+**A. Net Present Value (NPV)**
+- Discounted all cash flows at 8% WACC
+- Separate NPV calculations for project vs. shareholders
+
+**B. Internal Rate of Return (IRR)**
+- Solved for discount rate where NPV = 0
+- Compared to WACC to assess value creation
+
+**C. Payback Period**
+- Calculated cumulative cash flows to identify break-even year
+
+---
+
+## Key Financial Results
+
+### Project-Level Economics (Unlevered)
+
+| Metric | Value | Interpretation |
+|--------|-------|----------------|
+| **NPV** | **€7,623,117** | Project creates €7.6M in value |
+| **IRR** | **9.63%** | Exceeds WACC of 8% by 163 bps |
+| **Payback Period** | **Year 9** | Capital recovery within half of project life |
+
+**Assessment:** Project is economically viable from pure business case perspective.
+
+### Shareholder Returns (Levered - Base Case)
+
+| Metric | Value | Interpretation |
+|--------|-------|----------------|
+| **NPV to Shareholders** | **-€20,863,810** | Shareholders lose €20.9M in present value |
+| **IRR to Shareholders** | **2.71%** | Well below WACC of 8% |
+| **Payback Period** | **Year 4** | Faster payback but poor long-term returns |
+
+**Critical Insight:** The 5% annual dividend policy (€3.25M/year starting Year 2) destroys shareholder value. While dividends provide cash returns, they prevent capital accumulation needed to generate higher long-term returns.
+
+### Year-by-Year Performance Highlights
+
+**Year 1:**
+- Revenue: €10.2M
+- EBITDA: €8.7M (85% margin - excellent)
+- Net Income: €4.35M
+- Free Cash Flow: €7.275M
+
+**Year 10 (Steady State):**
+- Revenue: €9.75M (after degradation)
+- EBITDA: €8.25M
+- Net Income: €3.94M
+- Cumulative FCF: €71.0M (project has paid back and is generating positive returns)
+
+**Year 20 (End of Life):**
+- Revenue: €9.15M (cumulative 10% degradation)
+- Net Income: €3.40M
+- Total Cumulative FCF: €129.9M
+
+---
+
+## Sensitivity Analysis: Strategic Risk Assessment
+
+### 1. Dividend Policy Impact Analysis
+
+Tested three scenarios: 1%, 5% (base), and 10% dividend payout rates
+
+| Dividend Rate | Project NPV | Project IRR | Shareholder NPV | Shareholder IRR |
+|---------------|-------------|-------------|-----------------|-----------------|
+| **1%** | €7.6M | 9.63% | **+€1.9M** ✅ | **8.42%** ✅ |
+| **5% (Base)** | €7.6M | 9.63% | **-€20.9M** ❌ | 2.71% |
+| **10%** | €7.6M | 9.63% | **-€49.4M** ❌ | **-12.16%** ❌ |
+
+**Critical Finding:** 
+- Project NPV unchanged (dividends don't affect business operations)
+- Shareholder NPV **collapses dramatically** as dividend policy becomes more aggressive
+- **Only 1% dividend policy creates positive shareholder value (+€1.9M NPV, 8.42% IRR)**
+
+**Strategic Implication:** Company should adopt **minimal dividend policy** and reinvest cash flows, then execute larger capital return in later years when project has proven itself.
+
+### 2. Electricity Price Sensitivity
+
+Analyzed impact of ±€10/MWh variation in PPA price
+
+| PPA Price (€/MWh) | Project NPV | Project IRR | Shareholder NPV | Shareholder IRR |
+|-------------------|-------------|-------------|-----------------|-----------------|
+| **75 (−12%)** | **-€910K** ❌ | 7.80% | -€29.4M | 0.13% |
+| **85 (Base)** | **€7.6M** ✅ | 9.63% | -€20.9M | 2.71% |
+| **95 (+12%)** | **€16.2M** ✅ | 11.39% | -€12.3M | 5.00% |
+
+**Key Insights:**
+- **€8.5M NPV swing** per €10 price movement (high revenue sensitivity)
+- Project becomes **unprofitable below €75/MWh** (NPV negative)
+- Even at €95/MWh (optimistic), shareholders still see negative NPV due to dividend drag
+- IRR highly sensitive: 360 bps range across scenarios (7.8% to 11.4%)
+
+**Risk Assessment:** PPA price is the single biggest risk factor. Securing long-term contracts at €85+ is critical.
+
+### 3. Cost of Capital (WACC) Sensitivity
+
+Tested impact of ±2% WACC variation
+
+| WACC | Project NPV | Shareholder NPV | Interpretation |
+|------|-------------|-----------------|----------------|
+| **6% (−2%)** | **€19.2M** ✅ | -€14.6M | Lower discount rate significantly increases value |
+| **8% (Base)** | **€7.6M** ✅ | -€20.9M | Base case |
+| **10% (+2%)** | **-€1.5M** ❌ | -€25.9M | Project becomes NPV-negative |
+
+**Critical Finding:**
+- **€20.7M NPV swing** across 4% WACC range (extreme sensitivity)
+- At 10% WACC, **project is no longer viable** (NPV negative)
+- IRR of 9.63% provides only **163 bps cushion** above base WACC
+
+**Financing Strategy Implication:** Company must secure low-cost financing. Project becomes unviable if financing costs rise above ~9.5%.
+
+### 4. CapEx Overrun Risk
+
+Analyzed impact of Year 3 additional investment variation
+
+| Year 3 CapEx (€M) | Project NPV | Project IRR | NPV Impact | IRR Impact |
+|-------------------|-------------|-------------|------------|------------|
+| **€3M (−40%)** | €9.0M | 9.95% | +€1.4M | +0.32% |
+| **€5M (Base)** | €7.6M | 9.63% | Baseline | Baseline |
+| **€7M (+40%)** | €6.2M | 9.32% | -€1.4M | -0.31% |
+
+**Key Insights:**
+- **Low sensitivity** to CapEx overruns (±€1.4M NPV per €2M variation)
+- Even at 40% cost overrun, project remains viable (NPV still positive)
+- Grid upgrade costs are relatively immaterial to overall project economics
+
+---
+
+## Strategic Recommendations
+
+### Immediate Decision: **APPROVE** with Conditions
+
+**Rationale:** Project generates positive NPV (€7.6M) and IRR exceeds WACC (9.63% > 8.0%), demonstrating value creation at the business level.
+
+### Critical Success Factors
+
+**1. Optimize Dividend Policy (HIGHEST PRIORITY)**
+
+**Recommendation:** Implement **1% dividend payout** (€650K annually) instead of 5%
+
+**Impact:**
+- Shareholder NPV: +€1.9M (vs. -€20.9M in base case) - **€22.8M improvement**
+- Shareholder IRR: 8.42% (vs. 2.71%) - exceeds WACC
+- Allows capital accumulation for future reinvestment or larger distribution in Year 15-20
+
+**Alternative Strategy:** Zero dividends for first 10 years, then distribute accumulated cash in Years 11-20 when project has proven stable cash generation.
+
+**2. Lock in PPA Price (HIGH PRIORITY)**
+
+**Risk:** At €75/MWh, project NPV becomes negative (-€910K)
+
+**Mitigation Actions:**
+- Secure **20-year fixed PPA** at minimum €85/MWh before construction
+- Consider hedging with 25-year PPA (vs. 20-year) to capture value beyond Year 20
+- Build in price escalation clause tied to inflation (CPI + 1%)
+
+**Target:** Lock in €90+/MWh if possible (would add €8.5M to NPV)
+
+**3. Optimize Capital Structure (MEDIUM PRIORITY)**
+
+**Issue:** 8% WACC leaves only 163 bps cushion above minimum viable rate
+
+**Financing Strategy:**
+- Target 60/40 debt-to-equity ratio vs. current structure
+- Secure project finance at <6% interest rate (leverages government green energy incentives)
+- Consider green bonds or EU renewable energy subsidies to lower cost of capital
+
+**Impact:** Reducing WACC to 6% would increase NPV by €11.6M to €19.2M
+
+**4. Manage CapEx Risk (LOW PRIORITY)**
+
+**Observation:** Year 3 CapEx sensitivity is low (±40% = ±€1.4M NPV)
+
+**Actions:**
+- Negotiate fixed-price contract for grid upgrade with penalty clauses
+- Pre-order inverters to lock in pricing and avoid supply chain delays
+- Set aside €2M contingency reserve (40% buffer)
+
+### Medium-term Optimization (Years 3-10)
+
+**5. Operational Efficiency Focus**
+- Target OPEX reduction from €1.5M to €1.3M (13% decrease) through:
+  - Predictive maintenance using IoT sensors (reduce unplanned downtime)
+  - Automated panel cleaning systems (improve efficiency without labor costs)
+  - Renegotiate insurance premiums after 5 years of incident-free operation
+
+**6. Revenue Enhancement**
+- Investigate **merchant market exposure** after Year 10 if spot prices exceed €85/MWh
+- Explore additional revenue streams:
+  - Grid balancing services (frequency regulation)
+  - Capacity payments from TSO (transmission system operator)
+  - Virtual power plant participation
+
+### Long-term Strategy (Years 10-20)
+
+**7. Exit Strategy Planning**
+- Year 15: Evaluate sale to infrastructure fund at 8-10x EBITDA multiple
+- Year 18: Consider refinancing to extract equity while maintaining operations
+- Year 20: Negotiate plant life extension to 25-30 years if degradation is <15%
+
+---
+
+## Risk Matrix & Mitigation
+
+| Risk Factor | Probability | Impact | Mitigation Strategy | Priority |
+|-------------|------------|--------|---------------------|----------|
+| PPA price below €80/MWh | Medium | Critical | Lock 20-year contract pre-construction | **HIGH** |
+| WACC rises above 9.5% | Medium | Critical | Secure project finance at fixed rates | **HIGH** |
+| Solar degradation >0.7%/year | Low | Moderate | Use Tier 1 panels with 25-year warranty | Medium |
+| Grid connection delays | Medium | Moderate | Early engagement with TSO, penalty clauses | Medium |
+| CapEx overrun >30% | Low | Low | Fixed-price EPC contract | Low |
+| Policy changes (feed-in tariffs) | Low | Moderate | PPA insulates from policy risk | Low |
+
+---
+
+## Technical Skills Demonstrated
+
+### Financial Modeling Excellence
+- **20-year DCF Model:** Built integrated P&L, cash flow, and balance sheet projections
+- **Multi-scenario Analysis:** Separate unlevered (project) and levered (shareholder) calculations
+- **Dynamic Formulas:** Automated degradation curves, depreciation schedules, dividend calculations
+- **Array Formulas:** Used Excel array formulas for cumulative cash flow calculations
+
+### Corporate Finance Expertise
+- **Capital Budgeting:** NPV/IRR/Payback calculations with proper WACC application
+- **Sensitivity Analysis:** Tested 4 variables × 3 scenarios = 12 distinct financial scenarios
+- **Cash Flow Decomposition:** Separated CFO, CFI, CFF to identify cash sources and uses
+- **Shareholder Value Analysis:** Modeled dividend policy impact on equity returns
+
+### Energy Sector Knowledge
+- **Renewable Energy Economics:** Incorporated solar degradation, PPA structures, OPEX benchmarks
+- **Project Finance Structures:** Understood equity vs. project returns in infrastructure investments
+- **Revenue Modeling:** Built realistic production curves based on weather and degradation patterns
+
+### Strategic Business Judgment
+- **Trade-off Analysis:** Identified dividend policy as key destroyer of shareholder value
+- **Risk Quantification:** Ranked risks by NPV sensitivity to prioritize mitigation efforts
+- **Investment Committee Presentation:** Structured findings for executive decision-making
+
+---
+
+## Model Validation & Quality Control
+
+**Consistency Checks:**
+- ✅ Balance Sheet balances (Assets = Liabilities + Equity) across all 20 years
+- ✅ Cash flow statement ties to changes in balance sheet cash account
+- ✅ Net Income + Depreciation - CapEx = Free Cash Flow (CFO-CFI reconciliation)
+- ✅ NPV calculations verified using both sumproduct and manual PV formulas
+
+**Scenario Logic:**
+- ✅ Project NPV independent of dividend policy (confirmed across all sensitivity tests)
+- ✅ Shareholder NPV decreases as dividends increase (logical relationship validated)
+- ✅ IRR consistent with NPV sign (positive NPV → IRR > WACC)
+
+---
+
+## Key Learning Outcomes
+
+### 1. Project vs. Shareholder Returns Diverge
+**Insight:** A project can have excellent business case economics (9.63% IRR, €7.6M NPV) while simultaneously destroying shareholder value (-€20.9M shareholder NPV) due to poor financing and dividend decisions.
+
+**Application:** In infrastructure investing, capital structure and distribution policy matter as much as operational performance.
+
+### 2. Sensitivity Analysis Reveals Strategic Priorities
+**Insight:** Not all risks are equal. PPA price (€8.5M NPV swing per €10 price change) and WACC (€20.7M swing per 4% change) dominate all other factors.
+
+**Application:** Financial analysis should drive resource allocation—focus 80% of negotiation effort on securing low-cost financing and favorable PPA terms.
+
+### 3. Dividend Policy as Strategic Lever
+**Insight:** In capital-intensive projects, aggressive dividend policies prevent compound value creation. The €22.8M improvement from 5% → 1% dividend policy is larger than many operational improvements.
+
+**Application:** Patient capital wins in infrastructure—prioritize reinvestment over early distribution.
+
+### 4. IRR Cushion Matters
+**Insight:** A 163 bps cushion (9.63% IRR vs. 8% WACC) provides minimal margin of safety. Small changes in financing costs can make projects unviable.
+
+**Application:** Target minimum 300 bps IRR-WACC spread for infrastructure projects given their long duration risk.
+
+---
+
+## Deliverables
+
+- **20-Year Integrated Financial Model** (P&L, Cash Flow, NPV/IRR calculations)
+- **Sensitivity Analysis Dashboard** (4 variables × 3 scenarios with impact quantification)
+- **Investment Committee Memo** (5-page executive summary with approve/reject recommendation)
+- **Risk Matrix** (Probability-impact assessment with mitigation strategies)
+
+---
+
+*This project showcases my ability to evaluate complex, long-duration capital investments, balancing financial theory (DCF, WACC) with practical business judgment (dividend policy, negotiation priorities). The model's sophistication—incorporating degradation curves, tax shields, and multi-scenario analysis—demonstrates readiness for roles in infrastructure finance, project finance, or corporate development.*
+
+---
+
+## Appendix: Model Architecture
+
+**File Structure:**
+- **Input Parameters** (Rows 6-19): All assumptions clearly labeled with units and notes
+- **20-Year Projections** (Rows 23-44): Full P&L and cash flow waterfall
+- **Summary Metrics** (Rows 45-61): NPV, IRR, Payback for both project and shareholder perspectives
+- **Sensitivity Tables** (Rows 64-106): Four separate sensitivity analyses with automatic calculations
+
+**Formula Sophistication:**
+- Dynamic year references (no hard-coded values)
+- Conditional logic for dividend timing (IF statements)
+- Array formulas for cumulative calculations
+- IRR and NPV built-in functions with manual validation
